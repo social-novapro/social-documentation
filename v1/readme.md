@@ -12,14 +12,14 @@ Base URL ``https://interact-api.novapro.net/``
 
 | Name | Description |
 | -- | -- |
-| DELETE /v1/auth/removePost | ``not done docs`` |
+| [DELETE /v1/delete/removePost](./delete/removePost/readme.md) | ``not done docs`` |
 
 ## Routes /v1/get
 
 | URL | Description |
 | -- | -- |
-| GET /v1/get/allPosts | ``not done docs`` |
-| GET /v1/get/allPublicData | ``not done docs`` |
+| [GET /v1/get/allPosts](./get/allPosts/) | ``not done docs`` |
+| [GET /v1/get/allPublicData](./get/allPublicData/) | ``not done docs`` |
 | GET /v1/get/allUsers | ``not done docs`` |
 | GET /v1/get/analyticTrend | ``not done docs`` |
 | GET /v1/get/post | ``not done docs`` |

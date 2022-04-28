@@ -1,12 +1,12 @@
 # userLogin
 
 ``GET /v1/auth/userLogin/``
-| required (headers) | type | optional |
-| -- | -- | -- |
-| devtoken | String | false |
-| apptoken | String | false |
-| username | String | false |
-| password | String | false |
+| location | required | type | optional |
+| -- | -- | -- | -- |
+| header | devtoken | String | false |
+| header | apptoken | String | false |
+| header | username | String | false |
+| header | password | String | false |
 
 | returned | type | 
 | -- | -- |

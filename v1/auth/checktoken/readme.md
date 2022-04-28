@@ -1,13 +1,13 @@
 # checkToken
 
 ``GET /v1/auth/checkToken/``
-| required (headers) | type | optional |
-| -- | -- | -- |
-| devtoken | String | false |
-| apptoken | String | false |
-| accesstoken | String | false |
-| usertoken | String | false |
-| userid | String | false |
+| location | required | type | optional |
+| -- | -- | -- | -- |
+| header | devtoken | String | false |
+| header | apptoken | String | false |
+| header | accesstoken | String | false |
+| header | usertoken | String | false |
+| header | userid | String | false |
 
 
 | returned | type | 
