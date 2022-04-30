@@ -44,11 +44,11 @@ Request URL
 JavaScript Request Example
 ```js
 const headers = {
-    devtoken: XXXX
-    apptoken: XXXX
-    userid: XXXX
-    usertoken: XXXX
-    accesstoken: XXXX
+    devtoken: "XXXX"
+    apptoken: "XXXX"
+    userid: "XXXX"
+    usertoken: "XXXX"
+    accesstoken: "XXXX"
 }
 
 const response = await fetch(`https://interact-api.novapro.net/v1/get/allPosts`, { method: 'GET', headers})

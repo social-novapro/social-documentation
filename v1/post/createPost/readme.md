@@ -1,6 +1,10 @@
 # createPost
 
 ``POST /v1/post/createPost/``
+
+[Example of Request](#example-of-request)
+
+## Required
 | location | required | type | optional |
 | -- | -- | -- | -- |
 | header | devtoken | String | false |
@@ -9,6 +13,7 @@
 | header | usertoken | String | false |
 | header | userid | String | false |
 
+## Returned Data
 | returned | type | 
 | -- | -- |
 | deleted | Boolean |
