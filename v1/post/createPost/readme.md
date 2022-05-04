@@ -28,10 +28,10 @@ Request URL
 ### JavaScript Request Example
 ```js
 const headers = {
-    devtoken: "XXXX"
-    apptoken: "XXXX"
-    userid: "XXXX"
-    usertoken: "XXXX"
+    devtoken: "XXXX",
+    apptoken: "XXXX",
+    userid: "XXXX",
+    usertoken: "XXXX",
     accesstoken: "XXXX"
 }
 

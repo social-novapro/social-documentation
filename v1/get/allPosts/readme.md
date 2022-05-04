@@ -16,9 +16,7 @@
 ## Returned Data
 | returned | type | 
 | -- | -- |
-| Array | String[Array]<[Object](#arrayeach)> |
-
-You must convert the string into a readable array.
+| Array | Array<[Object](#arrayeach)> |
 
 
 ### arrayEach
@@ -44,15 +42,15 @@ Request URL
 JavaScript Request Example
 ```js
 const headers = {
-    devtoken: "XXXX"
-    apptoken: "XXXX"
-    userid: "XXXX"
-    usertoken: "XXXX"
+    devtoken: "XXXX",
+    apptoken: "XXXX",
+    userid: "XXXX",
+    usertoken: "XXXX",
     accesstoken: "XXXX"
 }
 
 const response = await fetch(`https://interact-api.novapro.net/v1/get/allPosts`, { method: 'GET', headers})
-// you must convert the data from a string to json
+
 var data = await response.json() 
 ```
 

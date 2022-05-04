@@ -31,14 +31,14 @@ Request URL
 ### JavaScript Request Example
 ```js
 const headers = {
-    devtoken: "XXXX"
-    apptoken: "XXXX"
-    username: "XXXX"
+    devtoken: "XXXX",
+    apptoken: "XXXX",
+    username: "XXXX",
     password: "XXXX"
 }
 
 const response = await fetch(`https://interact-api.novapro.net/v1/auth/checkToken`, { method: 'GET', headers})
-// you must convert the data from a string to json
+
 var data = await response.json() 
 ```
 ### Returned Data

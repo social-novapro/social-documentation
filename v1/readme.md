@@ -20,16 +20,21 @@ Base URL ``https://interact-api.novapro.net/``
 | -- | -- | -- |
 | 4 | [GET /v1/get/allPosts](./get/allPosts/readme.md) | You can get all posts in Interact. `Will be removed later.` |
 | 5 | [GET /v1/get/allPublicData](./get/allPublicData/readme.md) | You can get all users and posts in Interact. `Will be removed later.` |
-| 6 | GET /v1/get/allUsers | `not done docs` |
-| 7 | GET /v1/get/analyticTrend | `not done docs` |
-| 8 | GET /v1/get/post | `not done docs` |
-| 9 | GET /v1/get/search | `not done docs` |
-| 10 | GET /v1/get/user | `not done docs` |
-| 11 | GET /v1/get/userByID | `not done docs` |
-| 12 | GET /v1/get/userFeed | `not done docs` |
-| 13 | GET /v1/get/username | `not done docs` |
-| 14 | GET /v1/get/post | `not done docs` |
-| 15 | GET /v1/get/createPost | `not done docs` |
+| 6 | [GET /v1/get/allUsers](./get/allUsers/readme.md)| `not done docs` |
+| 7 | [GET /v1/get/analyticTrend](./get/analyticTrend/readme.md) | `not done docs` |
+| 8 | [GET /v1/get/post](./get/post/readme.md) | `not done docs` |
+| 9 | [GET /v1/get/search](./get/search/readme.md) | `not done docs` |
+| 10 | [GET /v1/get/user](./get/user/readme.md) | `not done docs` |
+| 11 | [GET /v1/get/userByID](./get/userByID/) | `not done docs` |
+| 12 | [GET /v1/get/userFeed](./get/userFeed/readme.md) | `not done docs` |
+| 13 | [GET /v1/get/username](./get/username) | `not done docs` |
+| 14 | [GET /v1/get/post](./get/post/readme.md) | `not done docs` |
+
+## Routes v1/post
+
+| # | Name | Description |
+| -- | -- | -- |
+| 15 | [POST /v1/post/createPost](./post/createPost/readme.md) | `not done docs` |
 
 ## Routes v1/put
 

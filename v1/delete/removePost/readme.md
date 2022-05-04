@@ -24,10 +24,10 @@ Request URL
 ### JavaScript Request Example
 ```js
 const headers = {
-    devtoken: "XXXX"
-    apptoken: "XXXX"
-    userid: "XXXX"
-    usertoken: "XXXX"
+    devtoken: "XXXX",
+    apptoken: "XXXX",
+    userid: "XXXX",
+    usertoken: "XXXX",
     accesstoken: "XXXX"
 }
 
@@ -35,7 +35,7 @@ const response = await fetch(`https://interact-api.novapro.net/v1/delete/removeP
     method: 'DELETE', 
     headers
 })
-// you must convert the data from a string to json
+
 var data = await response.json() 
 ```
 
