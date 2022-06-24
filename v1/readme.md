@@ -20,35 +20,36 @@ Base URL ``https://interact-api.novapro.net/``
 | -- | -- | -- |
 | 4 | [GET /v1/get/allPosts](./get/allPosts/readme.md) | You can get all posts in Interact. `Will be removed later.` |
 | 5 | [GET /v1/get/allPublicData](./get/allPublicData/readme.md) | You can get all users and posts in Interact. `Will be removed later.` |
-| 6 | [GET /v1/get/allUsers](./get/allUsers/readme.md)| `not done docs` |
-| 7 | [GET /v1/get/analyticTrend](./get/analyticTrend/readme.md) | `not done docs` |
-| 8 | [GET /v1/get/post](./get/post/readme.md) | `not done docs` |
-| 9 | [GET /v1/get/search](./get/search/readme.md) | `not done docs` |
-| 10 | [GET /v1/get/user](./get/user/readme.md) | `not done docs` |
-| 11 | [GET /v1/get/userByID](./get/userByID/) | `not done docs` |
-| 12 | [GET /v1/get/userFeed](./get/userFeed/readme.md) | `not done docs` |
-| 13 | [GET /v1/get/username](./get/username) | `not done docs` |
-| 14 | [GET /v1/get/post](./get/post/readme.md) | `not done docs` |
+| 6 | [GET /v1/get/allUsers](./get/allUsers/readme.md)| You can get all users in Interact. `Will be removed later.` |
+| 7 | [GET /v1/get/analyticTrend](./get/analyticTrend/readme.md) | You can get all API requests done by all users. `Will be removed later.` |
+| 8 | [GET /v1/get/post](./get/post/readme.md) | You can get info on a specific post. |
+| 9 | [GET /v1/get/search](./get/search/readme.md) | You can search for a post on Interact. |
+| 10 | [GET /v1/get/user](./get/user/readme.md) | You can get info on a specific user by their username. |
+| 11 | [GET /v1/get/userByID](./get/userByID/) | You can get info on a specific user by their user ID. |
+| 12 | [GET /v1/get/userFeed](./get/userFeed/readme.md) | You can get all posts created by a specific user. |
+| 13 | [GET /v1/get/username](./get/username) | You can get info on a specific user by their username. | <!-- this api is redundant, as /v1/get/user supplies the same information as well as some more -->
+| 14 | [GET /v1/get/post](./get/post/readme.md) | You can get info on a specific post. |
 
 ## Routes v1/post
 
 | # | Name | Description |
 | -- | -- | -- |
-| 15 | [POST /v1/post/createPost](./post/createPost/readme.md) | `not done docs` |
+| 15 | [POST /v1/post/createPost](./post/createPost/readme.md) | You can create a post on Interact. |
+| 16 | [POST /v1/post/requestVerify](./post/requestVerify/readme.md) | You can request verification for a user account. |
 
 ## Routes v1/put
 
 | # | Name | Description |
 | -- | -- | -- |
-| 16 | PUT /v1/put/editDisplayname | `not done docs` |
-| 17 | PUT /v1/put/editPost | `not done docs` |
-| 18 | PUT /v1/put/editUsername | `not done docs` |
-| 19 | PUT /v1/put/likePost | `not done docs` |
+| 17 | PUT /v1/put/editDisplayname | You can edit a user's display name. |
+| 18 | PUT /v1/put/editPost | You can edit a post. |
+| 19 | PUT /v1/put/editUsername | You can edit a user's username. |
+| 20 | PUT /v1/put/likePost | You can like a post. |
 
 ## Routes v1Priv/post
 
 | # | Name | Description |
 | -- | -- | -- |
-| 20 | POST /v1Priv/post/newAppToken | `not done docs` |
-| 21 | POST /v1Priv/post/newDev | `not done docs` |
-| 22 | POST /v1Priv/post/newUser | `not done docs` |
+| 21 | POST /v1Priv/post/newAppToken | You can create an application token. You need dev, app, and user tokens to perform API calls.|
+| 22 | POST /v1Priv/post/newDev | You can create a development token. You need dev, app, and user tokens to perform API calls.|
+| 23 | POST /v1Priv/post/newUser | You can create a new user |
