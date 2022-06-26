@@ -41,15 +41,16 @@ Base URL ``https://interact-api.novapro.net/``
 
 | # | Name | Description |
 | -- | -- | -- |
-| 17 | PUT /v1/put/editDisplayname | You can edit a user's display name. |
+| 17 | PUT /v1/put/userEdit | You can edit user data. |
 | 18 | PUT /v1/put/editPost | You can edit a post. |
-| 19 | PUT /v1/put/editUsername | You can edit a user's username. |
 | 20 | PUT /v1/put/likePost | You can like a post. |
+| 21 | PUT /v1/put/editDisplayname | You can edit a user's display name. |
+| 22 | PUT /v1/put/editUsername | You can edit a user's username. |
 
 ## Routes v1Priv/post
 
 | # | Name | Description |
 | -- | -- | -- |
-| 21 | POST /v1Priv/post/newAppToken | You can create an application token. You need dev, app, and user tokens to perform API calls.|
-| 22 | POST /v1Priv/post/newDev | You can create a development token. You need dev, app, and user tokens to perform API calls.|
-| 23 | POST /v1Priv/post/newUser | You can create a new user |
+| 23 | POST /v1Priv/post/newAppToken | You can create an application token. You need dev, app, and user tokens to perform API calls.|
+| 24 | POST /v1Priv/post/newDev | You can create a development token. You need dev, app, and user tokens to perform API calls.|
+| 25 | POST /v1Priv/post/newUser | You can create a new user |
