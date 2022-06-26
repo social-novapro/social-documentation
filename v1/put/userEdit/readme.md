@@ -1,6 +1,6 @@
 # userEdit
 
-``POST /v1/put/userEdit``
+``PUT /v1/put/userEdit/``
 
 [Example of Request](#example-of-request)
 
@@ -12,6 +12,7 @@
 | header | accesstoken | String | false |
 | header | usertoken | String | false |
 | header | userid | String | false |
+| -- | at least one of below | -- | -- |
 | header | newUsername | String | true* |
 | header | newDisplayname | String | true* |
 | header | newPronouns | String | true* |
@@ -23,8 +24,8 @@
 ## Returned Data
 | returned | type | 
 | -- | -- |
-| new | [InteractUserSchema](/v1/schemas/InteractUserSchema.md) |
-| before | [InteractUserSchema](/v1/schemas/InteractUserSchema.md) |
+| new | Object<[userSchema](../../schemas/interactUserSchema.md)> |
+| before | Object<[userSchema](../../schemas/interactUserSchema.md)> |
 
 ## Example of Request
 ### Request
@@ -39,17 +40,18 @@ const headers = {
     apptoken: "XXXX",
     userid: "XXXX",
     usertoken: "XXXX",
-    accesstoken: "XXXX"
+    accesstoken: "XXXX",
+    newUsername: "XXXX", // Optional Requires At Least One
+    newDisplayname: "XXXX", // Optional Requires At Least One
+    newDescription: "XXXX", // Optional Requires At Least One
+    newPronouns: "XXXX", // Optional Requires At Least One
+    newStatus: "XXXX", // Optional Requires At Least One
 }
-const data = { 
-    newDisplayName: "YYYY",
-    newPronouns: "ABC/DEF"
-};
-const response = await fetch(`https://interact-api.novapro.net/v1/post/userEdit`, {
+const response = await fetch(`https://interact-api.novapro.net/v1/put/userEdit`, {
     method: 'PUT',
     headers,
-    body: JSON.stringify(data)
 });
+
 // you must convert the data from a string to json
 var res = await response.json()
 ```
@@ -94,3 +96,4 @@ var res = await response.json()
     "username": "XXXX"
   }
 }
+```
