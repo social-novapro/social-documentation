@@ -13,18 +13,19 @@
 | header | usertoken | String | false |
 | header | userid | String | false |
 | -- | at least one of below | -- | -- |
-| header | newUsername | String | true | 
-| header | newDisplayname | String | true | 
-| header | newDescription | String | true | 
-| header | newPronouns | String | true | 
-| header | newStatus | String | true | 
+| header | newUsername | String | true* |
+| header | newDisplayname | String | true* |
+| header | newPronouns | String | true* |
+| header | newDescription | String | true* |
+| header | newStatus | String | true* |
+
+**the amount of optional headers must be between 1 and 5 inclusive*
 
 ## Returned Data
 | returned | type | 
 | -- | -- |
 | new | Object<[userSchema](../../schemas/interactUserSchema.md)> |
 | before | Object<[userSchema](../../schemas/interactUserSchema.md)> |
-
 
 ## Example of Request
 ### Request
@@ -46,10 +47,9 @@ const headers = {
     newPronouns: "XXXX", // Optional Requires At Least One
     newStatus: "XXXX", // Optional Requires At Least One
 }
-
 const response = await fetch(`https://interact-api.novapro.net/v1/put/userEdit`, {
-    method: 'POST',
-    headers
+    method: 'PUT',
+    headers,
 });
 
 // you must convert the data from a string to json
@@ -59,22 +59,41 @@ var res = await response.json()
 ### Returned Data
 ``` JSON
 {
-    "_id": "6ceae342-2ca2-48ec-8ce3-0e39caebe989",
+  "new": {
+    "_id": "XXXX",
     "__v": 1,
-    "creationTimestamp": "1646367628998",
-    "description": "Hello, its me Daniel! The Creator of Interact!",
-    "displayName": "Daniel Kravec",
+    "creationTimestamp": "1648174890907",
+    "description": "XXXX",
+    "displayName": "YYYY",
     "followerCount": 0,
     "followingCount": 0,
-    "lastEditDisplayname": 1646367628998,
-    "lastEditUsername": 1646367628998,
+    "lastEditDisplayname": 1656208206255,
+    "lastEditUsername": 1648174890907,
     "likeCount": 0,
     "likedCount": 0,
-    "pronouns": null,
+    "pronouns": "ABC/DEF",
     "statusTitle": null,
     "totalPosts": 0,
     "totalReplies": 0,
-    "username": "dan2364755",
-    "lastEdit": 1646367628998
+    "username": "XXXX"
+  },
+  "before": {
+    "_id": "XXXX",
+    "__v": 1,
+    "creationTimestamp": "1648174890907",
+    "description": "XXXX",
+    "displayName": "XXXX",
+    "followerCount": 0,
+    "followingCount": 0,
+    "lastEditDisplayname": 1656074181261,
+    "lastEditUsername": 1648174890907,
+    "likeCount": 0,
+    "likedCount": 0,
+    "pronouns": "GHI/JKL",
+    "statusTitle": null,
+    "totalPosts": 0,
+    "totalReplies": 0,
+    "username": "XXXX"
+  }
 }
 ```
