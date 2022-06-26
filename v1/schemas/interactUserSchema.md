@@ -13,17 +13,18 @@
 | followerCount | Number | false | Amount of followers the user has. |
 | followingCount | Number | false | Amount of people the user is following. |
 | likeCount | Number | false | Amount of likes the user has on all their posts. |
-| likedCount | Number | true | Amount of posts the user has liked |
+| likedCount | Number | true | Amount of posts the user has liked. |
 | totalPosts | Number | true | The total amount of indepentant posts the user has made. |
 | totalReplies | Number | true | The total amount of replies the user has made. |
 | privacySetting | Object<[privacySettingSchema](#privacysettingschema)> | true | User privacy settings. |
+| lastEdit | Number | false | Time since last edit of user. |
 
 ### privacySettingSchema
 | Field | Type | Optional | Description | 
 | -- | -- | -- | -- |
 | discoverySetting | Number<[options](#privacysettingoptions)>| true | Can you search the user up? | 
 | postVisiblityDefault | Number<[options](#privacysettingoptions)> | true | Can anybody see the posts? |
-| postReplyDefault | Number<[options](#privacysettingoptions)>| true | Can anybody any replies? |
+| postReplyDefault | Number<[options](#privacysettingoptions)> | true | Can anybody any replies? |
 
 ### privacySettingOptions
 | Option | Description |
