@@ -16,7 +16,7 @@
 ## Returned Data
 | returned | type | 
 | -- | -- |
-| deleted | Boolean |
+| Post Object | Object<[postSchema](../../schemas/interactPostSchema.md)> |
 
 
 ## Example of Request

@@ -13,7 +13,9 @@
 | returned | type | 
 | -- | -- |
 | deleted | Boolean |
+| post* | Object<[postSchema](../../schemas/interactPostSchema.md)> |
 
+\**only in newer api version*
 
 ## Example of Request
 ### Request
@@ -42,6 +44,15 @@ var data = await response.json()
 ### Returned Data
 ``` JSON
 {
-    "deleted" : "true"
+    "deleted" : "true",
+    "post" : {
+        "__v": 1,
+        "_id": "1521ef6b-e768-4ea7-867d-bfe0c20c71b2",
+        "content": "test",
+        "timePosted": "1651081504275",
+        "totalLikes": 0,
+        "totalReplies": 0,
+        "userID": "32751e8e-0b7f-42e3-9ab7-b38dd53c0da8"
+    }
 }
 ```
