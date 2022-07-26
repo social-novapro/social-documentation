@@ -7,7 +7,7 @@
 ## Required 
 | location | required | type | optional |
 | -- | -- | -- | -- |
-| url param | username | String | false | 
+| url param | userid | String | false | 
 | header | devtoken | String | false |
 | header | apptoken | String | false |
 | header | accesstoken | String | false |

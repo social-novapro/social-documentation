@@ -1,10 +1,11 @@
 ## v1 schemas
 
-| Name | Description |
-| -- | -- |
-| [interactPostSchema](./interactPostSchema.md) | -- |
-| [interactUserSchema](./interactUserSchema.md) | -- |
-| [interactUserAccessSchema](./interactUserAccessSchema.md) | -- |
-| [developerAppToken](./developerAppToken.md) | -- |
-| [developerToken](./developerToken.md) | -- |
-| [interactUserAnalyticSchema](./interactUserAnalyticSchema.md) | -- |
+| Type | Name | Description |
+| -- | -- | -- |
+| Post | [interactPostSchema](./interactPostSchema.md) | -- |
+| User | [interactUserSchema](./interactUserSchema.md) | -- |
+| UserPriv | [interactUserAccessSchema](./interactUserAccessSchema.md) | -- |
+| Developer | [developerAppToken](./developerAppToken.md) | -- |
+| Developer | [developerToken](./developerToken.md) | -- |
+| Analytics | [interactUserAnalyticSchema](./interactUserAnalyticSchema.md) | -- |
+| Post | [interactPostBookmarks](./postSchemas/interactPostBookmarks.md) | -- |
