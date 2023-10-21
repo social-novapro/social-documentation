@@ -1,7 +1,14 @@
 # Version History
 History of each update made to documentation.
 
-Version numbers: <b>V.X.X (build.year.month.day)</b>
+Version numbers: <b>X.X.X (build.year.month.day)</b>
+
+---
+### 1.0 (14.2023.10.21)
+- Rewrote every schema in /v1/schemas, was missing many, and had many outdated. |
+- Started adding new/updated routes in /v1
+- Updated main readme file
+- added instructions to get started
 
 ---
 

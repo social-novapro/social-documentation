@@ -1,5 +1,14 @@
 # Interact API - v1
-Base URL ``https://interact-api.novapro.net/``
+Base URL ``https://interact-api.novapro.net/v1``
+
+---
+
+```
+!! CURRENTLY OUTDATED ROUTES, READ MAIN FILE FOR MORE INFO !!
+```
+[Main File](../readme.md)
+
+---
 
 ## 1: Routes /v1/auth
 

@@ -8,7 +8,8 @@
 | description | String | true | The user's bio/description. |
 | pronouns | String | true | The user's pronouns. |
 | statusTitle | String | true | Users can set a status that shows up on the profile.
-| lastEditDisplayname | Number | false | This is used to know the last time they updated their displayname. (also used for rate limiting) |
+| themeData | Object<[themeSchema](#themeschema)> | true | Theme data |
+| lastEdit | Number | false | Time since last edit of user. |
 | creationTimestamp | String | false | When the user first joined the site. |
 | followerCount | Number | false | Amount of followers the user has. |
 | followingCount | Number | false | Amount of people the user is following. |
@@ -16,8 +17,19 @@
 | likedCount | Number | true | Amount of posts the user has liked. |
 | totalPosts | Number | true | The total amount of indepentant posts the user has made. |
 | totalReplies | Number | true | The total amount of replies the user has made. |
+| isBrandAccount | Boolean | false | Is the user a brand account? |
 | privacySetting | Object<[privacySettingSchema](#privacysettingschema)> | true | User privacy settings. |
-| lastEdit | Number | false | Time since last edit of user. |
+| profileURL | String | false | The profile image link. |
+| userAge | Number | true | The user's age. |
+| verified | Boolean | false | Is the user verified? |
+| demo | Boolean | true | Is the user a demo account? |
+
+### themeSchema
+| Field | Type | Optional | Description |
+| -- | -- | -- | -- |
+| themeID | String | false | The theme ID. |
+| testTheme | String | true | The theme ID to test. |
+| amountTested | Number | true | The amount of times the theme has been tested. |
 
 ### privacySettingSchema
 | Field | Type | Optional | Description | 

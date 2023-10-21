@@ -19,7 +19,7 @@
 | accessToken | String |
 | userToken | String |
 | userID | String |
-| publicData | [userData](../../schemas/interactUserSchema.md) | 
+| publicData | [publicData](../../schemas/interactUserSchema.md) | 
 | login | Boolean | 
 
 

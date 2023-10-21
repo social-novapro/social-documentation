@@ -46,25 +46,30 @@ var data = await response.json()
 {
 	"login": true,
 	"publicData": {
-		"_id": "XXXX", // userid
+		"_id": "1a03697c-5eb2-42f6-8c9b-27ed547d7493",
 		"__v": 1,
-		"creationTimestamp": "1646367628998",
-		"description": "Hello, its me Daniel! The Creator of Interact!",
-		"displayName": "Daniel Kravec",
+		"creationTimestamp": "1697914216950",
+		"description": "this account is used to test the API",
+		"displayName": "dan's API",
 		"followerCount": 0,
 		"followingCount": 0,
-		"lastEditDisplayname": 1646367628998,
-		"lastEditUsername": 1646367628998,
+		"lastEditUsername": 1697914216950,
 		"likeCount": 0,
 		"likedCount": 0,
-		"pronouns": null,
+		"pronouns": "he/him",
 		"statusTitle": null,
 		"totalPosts": 0,
 		"totalReplies": 0,
-		"username": "dan2364755"
+		"username": "daniel_test",
+		"pins": [
+			{
+				"_id": "671c9ad0-7230-4e6d-9301-e0160e776370",
+				"timestamp": 1697914263724
+			}
+		]
 	},
-	"accessToken": "XXXX",
-	"userToken": "XXXX",
-	"userID": "XXXX"
+	"accessToken": "574f5e5a-bb77-47b3-a969-6ec79d0a8bf2",
+	"userToken": "405ff58c-a284-455f-8667-4c0f166dd9fa",
+	"userID": "1a03697c-5eb2-42f6-8c9b-27ed547d7493"
 }
 ```
