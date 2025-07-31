@@ -4,6 +4,9 @@ History of each update made to documentation.
 Version numbers: <b>X.X.X (build.year.month.day)</b>
 
 ---
+### 1.0 (15.2025.07.09) 
+- Added onboarding section of documentation.
+
 ### 1.0 (14.2023.10.21)
 - Rewrote every schema in /v1/schemas, was missing many, and had many outdated. |
 - Started adding new/updated routes in /v1
