@@ -4,6 +4,9 @@ History of each update made to documentation.
 Version numbers: <b>X.X.X (build.year.month.day)</b>
 
 ---
+### 1.0 (16.2025.07.30)
+- Added releases section to onboarding documentation.
+ 
 ### 1.0 (15.2025.07.09) 
 - Added onboarding section of documentation.
 
