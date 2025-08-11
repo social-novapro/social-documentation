@@ -4,6 +4,9 @@ History of each update made to documentation.
 Version numbers: <b>X.X.X (build.year.month.day)</b>
 
 ---
+### 1.0 (17.2025.08.11)
+- Cleaned up onboarding, but will update again with only frontend onboarding.
+
 ### 1.0 (16.2025.07.30)
 - Added releases section to onboarding documentation.
  

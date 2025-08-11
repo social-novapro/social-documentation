@@ -1,32 +1,104 @@
 # Interact Onboarding Documentation
 
-## Steps to Get Started
-1. Decide whether you want to work on the backend, or the frontend.
-- Linux or macOS is recommended for backend development. If using windows, you may use WSL2 (Windows Subsystem for Linux) to run the backend.
-2. Do you want to work locally, or on a server?
-- You may use localhost to run the backend, and the frontend.
-- You will need OpenSSL installed to run on a server.
+## **1. Getting Started**
 
+1. Choose your focus
 
-## Installation
-| Name | Description | Interact Usage |
+   * **Backend development** – Recommended OS: **Linux** or **macOS**.
+     If you’re using Windows, install **WSL2 (Windows Subsystem for Linux)** to run the backend.
+   * **Frontend development** – Any OS is fine.
+2. Choose your environment
+
+   * **Local development** – Run both backend and frontend on `localhost`.
+   * **Server development** – Requires **OpenSSL** for SSL certificate handling.
+
+---
+
+## 2. Required Tools & Their Purpose
+
+| Tool / Software | Description | Used For |
 | -- | -- | -- |
-| Visual Studio Code | A code editor for writing code. | Writing backend and frontend code. |
-| Docker Desktop | A tool for managing Docker containers. | Running the database and subservices in containers. | 
-| Node.js | A JavaScript runtime for running code locally. | Running the backend server. |
-| MongoDB Docker | A Docker image for running MongoDB. | Running the database in a container. |
-| MongoDB Compass | A GUI for managing MongoDB databases. | Managing the database and viewing data. |
-| Git | A version control system for managing code. | Managing code changes and collaborating with others. |
-| OpenSSL | A tool for managing SSL certificates. | Running the backend server on a server. |
-| Bruno | A tool for testing APIs and managing requests. | Testing the backend API routes. |
+| **Visual Studio Code** | Code editor | Writing backend and frontend code |
+| **Docker Desktop** | Docker container management | Running the database and subservices |
+| **Node.js (v20)** | JavaScript runtime | Running the backend server locally |
+| **MongoDB Docker** | MongoDB image for Docker | Running the database in a container |
+| **MongoDB Compass** | GUI for MongoDB | Managing and viewing database data     |
+| **Git** | Version control | Managing code changes & collaboration  |
+| **OpenSSL** *(optional)* | SSL certificate management  | Running backend on a server with HTTPS |
+| **Bruno** | API testing tool | Testing backend API routes |
 
-1. Download latest version of Visual Studio Code. 
-2. Download Docker Desktop for your OS.[Docker.com](https://www.docker.com/products/docker-desktop/)
-3. Download latest version of <b>v20</b> of Node.js. [Nodejs.org](https://nodejs.org/en/download)
-- You may use nvm (Node Version Manager) to install multiple versions of Node.js.
-4. Download latest version of MongoDB Docker [Docker Hub](https://hub.docker.com/_/mongo)
-5. Download latest version of MongoDB Compass [MongoDB.com](https://www.mongodb.com/products/tools/compass)
-6. Download latest version of Git. [Git-SCM.com](https://git-scm.com/downloads) or $ sudo apt-get git
-7. (optional) Download latest version of OpenSSL via terminal.
-8. Download latest version of Bruno [UseBruno.com](https://www.usebruno.com)
+---
 
+## 3. Installation Steps
+
+1. Install Visual Studio Code
+   [Download here](https://code.visualstudio.com/)
+
+2. Install Docker Desktop for your OS
+   [Download here](https://www.docker.com/products/docker-desktop/)
+
+3. Install Node.js (version 20)
+   [Download here](https://nodejs.org/en/download)
+
+   * Alternatively, use **nvm (Node Version Manager)** to manage multiple Node.js versions.
+
+4. Install MongoDB Docker image
+   [View on Docker Hub](https://hub.docker.com/_/mongo)
+
+5. Install MongoDB Compass
+   [Download here](https://www.mongodb.com/products/tools/compass)
+
+6. Install Git
+
+   * [Download here](https://git-scm.com/downloads)
+   * Or on Linux:
+
+     ```bash
+     sudo apt-get install git
+     ```
+
+7. **(Optional)** Install OpenSSL
+
+   * On macOS: Preinstalled
+   * On Linux:
+
+     ```bash
+     sudo apt-get install openssl
+     ```
+
+8. **Install Bruno** (API testing tool)
+   [Download here](https://www.usebruno.com)
+
+---
+
+## **4. Next Steps**
+
+* **Clone the repository**
+
+  ```bash
+  git clone <repository_url>
+  cd <repository_folder>
+  ```
+
+* **Set up environment variables** – Follow `.env.example` and create your `.env` file.
+
+* **Start Docker containers**
+
+  ```bash
+  docker-compose up -d
+  ```
+
+* **Run the backend locally**
+
+  ```bash
+  npm install
+  npm run dev
+  ```
+
+* **Run the frontend** – Follow frontend setup documentation in `/frontend`.
+
+---
+
+This version is **clearer, formatted for readability, and beginner-friendly**.
+
+If you want, I can also make a **quick-start “one-page” onboarding sheet** so a new developer can be up and running in under 10 minutes. That would make onboarding even smoother.
