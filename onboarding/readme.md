@@ -1,104 +1,86 @@
 # Interact Onboarding Documentation
 
-## **1. Getting Started**
+## 1. Overview
 
-1. Choose your focus
+Currently, Interact contributors will be focusing on **frontend development**.
+The backend and microservices are currently hosted in **production** and require additional security steps that aren’t part of this onboarding.
 
-   * **Backend development** – Recommended OS: **Linux** or **macOS**.
-     If you’re using Windows, install **WSL2 (Windows Subsystem for Linux)** to run the backend.
-   * **Frontend development** – Any OS is fine.
-2. Choose your environment
-
-   * **Local development** – Run both backend and frontend on `localhost`.
-   * **Server development** – Requires **OpenSSL** for SSL certificate handling.
+When a **development backend** is ready, this guide will be updated with backend onboarding instructions. If you want to contribute to the backend, please contact Daniel Kravec directly at [daniel@dkravec.net](mailto:daniel@dkravec.net)
 
 ---
 
-## 2. Required Tools & Their Purpose
+## 2. Common Setup
 
-| Tool / Software | Description | Used For |
+### Required Tools
+
+| Tool | Purpose | Link |
 | -- | -- | -- |
-| **Visual Studio Code** | Code editor | Writing backend and frontend code |
-| **Docker Desktop** | Docker container management | Running the database and subservices |
-| **Node.js (v20)** | JavaScript runtime | Running the backend server locally |
-| **MongoDB Docker** | MongoDB image for Docker | Running the database in a container |
-| **MongoDB Compass** | GUI for MongoDB | Managing and viewing database data     |
-| **Git** | Version control | Managing code changes & collaboration  |
-| **OpenSSL** *(optional)* | SSL certificate management  | Running backend on a server with HTTPS |
-| **Bruno** | API testing tool | Testing backend API routes |
+| **Visual Studio Code** | Code editor | [Download](https://code.visualstudio.com/) |
+| **Live Server extension** | Local development server for HTML/JS/CSS | [Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) |
+| **Git** | Version control | [Download](https://git-scm.com/downloads) | 
+
+---
+## 3. Releases
+For each release, you must follow the instructions in [releases](./releases.md) to prepare any given repository for the release.
 
 ---
 
-## 3. Installation Steps
+## 4. Frontend Quick Start
 
-1. Install Visual Studio Code
-   [Download here](https://code.visualstudio.com/)
+1. **Clone the Repository**
+    * Navigate to a folder for repositories, ex: `~/git, ~/dev, ~/repos`
+    ```bash
+    mkdir social-novapro
+    cd social-novapro
+    git clone https://github.com/social-novapro/social-frontend-plain
+    ```
 
-2. Install Docker Desktop for your OS
-   [Download here](https://www.docker.com/products/docker-desktop/)
+2. Open the Frontend Repository in VS Code
+    * Navigate to the `social-frontend-plain/html` folder in VS Code.
+    * You must open the `html` folder, not the root of the repository, as the HTML files are located there.
 
-3. Install Node.js (version 20)
-   [Download here](https://nodejs.org/en/download)
+3. Set API Environment
+    * Open the file `config.js` in the html folder.
+    * Confirm that line 3 is set to prod: `"current" : "prod",` (set by default)
+    * Create API Tokens, follow [Get Started](../readme.md#2-get-started) to create your developer and application tokens.
+    * Copy the devtoken, and apptoken, and place it into the config file: 
+    ```javascript
+    var headers = {
+        'Content-Type': 'application/json',
+        "devtoken" : "XXX-XXX-XXX-XXX-XXX",
+        "apptoken" : "XXX-XXX-XXX-XXX-XXX"
+    }
+    ```
+    * Replace the XXX-XXX-XXX-XXX with your own developer and application tokens.
 
-   * Alternatively, use **nvm (Node Version Manager)** to manage multiple Node.js versions.
+4. Start Live Server
+    * Right-click the `index.html` file.
+    * Select **"Open with Live Server"**.
+    * The app will open in your browser at:
+    ```
+    http://127.0.0.1:5500/
+    ```
+    * You can login with your Interact account or create a new one.
 
-4. Install MongoDB Docker image
-   [View on Docker Hub](https://hub.docker.com/_/mongo)
-
-5. Install MongoDB Compass
-   [Download here](https://www.mongodb.com/products/tools/compass)
-
-6. Install Git
-
-   * [Download here](https://git-scm.com/downloads)
-   * Or on Linux:
-
-     ```bash
-     sudo apt-get install git
-     ```
-
-7. **(Optional)** Install OpenSSL
-
-   * On macOS: Preinstalled
-   * On Linux:
-
-     ```bash
-     sudo apt-get install openssl
-     ```
-
-8. **Install Bruno** (API testing tool)
-   [Download here](https://www.usebruno.com)
-
----
-
-## **4. Next Steps**
-
-* **Clone the repository**
-
-  ```bash
-  git clone <repository_url>
-  cd <repository_folder>
-  ```
-
-* **Set up environment variables** – Follow `.env.example` and create your `.env` file.
-
-* **Start Docker containers**
-
-  ```bash
-  docker-compose up -d
-  ```
-
-* **Run the backend locally**
-
-  ```bash
-  npm install
-  npm run dev
-  ```
-
-* **Run the frontend** – Follow frontend setup documentation in `/frontend`.
+5. Develop
+    * Any changes you save will automatically refresh in the browser.
 
 ---
 
-This version is **clearer, formatted for readability, and beginner-friendly**.
+## 5. API Usage Notes
+* The frontend is connected to the **production API** by default.
+* Some endpoints may require authentication or tokens.
+* Do **not** submit real or sensitive data during frontend development.
 
-If you want, I can also make a **quick-start “one-page” onboarding sheet** so a new developer can be up and running in under 10 minutes. That would make onboarding even smoother.
+---
+
+## 6. Backend Onboarding (Coming Soon)
+
+Backend onboarding will be added when a **development backend environment** is available.
+Planned improvements:
+
+* A full development ready backend instance, with all microservices.
+* An seperate endpoint for backend contributors to test their changes with real data.
+    * Such as, DB, AI, and media services.
+    * This will also allow developers to not worry about setting up their own backend instances.
+* Shared development tokens for contributors.
